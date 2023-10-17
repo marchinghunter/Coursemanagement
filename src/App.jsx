@@ -5,7 +5,6 @@ import { Routes, Route } from "react-router-dom";
 import Signup from "./Components/Signup";
 import User from "./Components/User";
 import Error from "./Components/Errorpage";
-import axios from 'axios';
 import Header from "./Components/Header";
 import Admin from "./Components/Admin";
 import Newcourse from "./Components/Admintabs/Newcourse";
