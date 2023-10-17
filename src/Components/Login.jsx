@@ -85,7 +85,7 @@ const Login = () => {
             Login
           </button>
           <button type="submit" className="authgooglebtn" onClick={()=>{
-            window.open('http://localhost:8080/auth/google',"_self")
+            window.open(`${import.meta.env.VITE_API_BASE_URL}/auth/google`,"_self")
           }}>
             Google
           </button>

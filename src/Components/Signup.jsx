@@ -14,39 +14,38 @@ const Signup = () => {
       return { ...prevState, [event.target.name]: event.target.value };
     });
   };
-//   const emailExist=()=>{
-//     toast.error('Email already exists', {
-//       position: "top-center",
-//       autoClose: 3000,
-//       hideProgressBar: false,
-//       closeOnClick: true,
-//       pauseOnHover: true,
-//       draggable: true,
-//       progress: undefined,
-//       theme: "colored",
-//       });
-//       dispatch(reset())
-//   }
-//   const someErr=()=>{
-//     toast.error('There is some error', {
-//       position: "top-center",
-//       autoClose: 3000,
-//       hideProgressBar: false,
-//       closeOnClick: true,
-//       pauseOnHover: true,
-//       draggable: true,
-//       progress: undefined,
-//       theme: "colored",
-//       });
-//       dispatch(reset())
-//   }
-//   {emailerror===true&&emailExist()}
-//   {apierror===true&&someErr()}
+  //   const emailExist=()=>{
+  //     toast.error('Email already exists', {
+  //       position: "top-center",
+  //       autoClose: 3000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "colored",
+  //       });
+  //       dispatch(reset())
+  //   }
+  //   const someErr=()=>{
+  //     toast.error('There is some error', {
+  //       position: "top-center",
+  //       autoClose: 3000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "colored",
+  //       });
+  //       dispatch(reset())
+  //   }
+  //   {emailerror===true&&emailExist()}
+  //   {apierror===true&&someErr()}
 
   return (
     <div>
-        <ToastContainer
-        />
+      <ToastContainer />
       <div className="everythingwrapper">
         <div className="titlewrapper">
           <h1 className="authtitle">Security Dojo</h1>
@@ -75,14 +74,21 @@ const Signup = () => {
             type="submit"
             className="authbtn"
             onClick={() => {
-            //   dispatch(createUserData(userData));              
+              //   dispatch(createUserData(userData));
             }}
           >
             Sign Up
           </button>
-          <button type="submit" className="authgooglebtn" onClick={()=>{
-            window.open('/auth/google',"_self")
-          }}>
+          <button
+            type="submit"
+            className="authgooglebtn"
+            onClick={() => {
+              window.open(
+                `${import.meta.env.VITE_API_BASE_URL}/auth/google`,
+                "_self"
+              );
+            }}
+          >
             Google
           </button>
           <Link to="/login">
