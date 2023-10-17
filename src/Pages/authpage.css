@@ -1,0 +1,80 @@
+.everythingwrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top:50px;
+}
+.authtitle{
+    font-size: 4rem;
+    color:#3667a3;
+    margin-bottom:1rem;
+}
+.authtitledesc{
+    margin-top:1rem;
+    font-size: 2rem;
+}
+.loginboxwrapper{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    display: flex;
+    flex-direction:column;
+    margin-left: 5rem;
+    align-items: center;
+    background-color: white;
+}
+.titlewrapper{
+    /* margin:5rem; */
+    margin-right: 15rem;
+}
+
+.authbtn{
+    text-align: center;
+    color: white;
+    border: 0.2rem solid #131313;
+    border-radius: 1.9rem;
+    background-color: Black;
+    padding: 1rem;
+    display: inline-block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    right: 5rem;
+    cursor: pointer;
+  width: 10.938rem;
+}
+.authgooglebtn{
+    text-align: center;
+    color: white;
+    border: 0.2rem solid #ff000d;
+    border-radius: 1.9rem;
+    background-color: #fe0916;
+    padding: 1rem;
+    display: inline-block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    right: 5rem;
+    cursor: pointer;
+  width: 10.938rem;
+}
+.authgooglebtn:hover {
+    text-align: center;
+    color: #fe0916;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+.authbtn:hover {
+    text-align: center;
+    color:black;
+    background-color: #ffffff;
+    display: inline-block;
+  }
+input{
+    border-radius: 0.4rem;
+    padding: 1rem;
+    width: 15rem;
+    margin: 1.5rem;
+    /* text-align: center; */
+}

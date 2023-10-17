@@ -1,0 +1,66 @@
+.cformstyle{
+    display: flex;
+    flex-direction: column;
+
+}
+.inputfieldsofadmin{
+    font-size:24px;
+}
+#desc{
+    height:300px;
+    border-radius: 10px;
+    border:2px solid black;
+    padding: 15px;
+}
+.admincontainer{
+    margin:50px;
+}
+label{
+    font-weight:bold;
+    font-size:30px;
+}
+#skillLevel{
+    width:150px;
+    height:50px;
+    font-size:30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.inputfieldsofadmin{
+    margin-top:25px;
+    margin-left:50px;
+}
+.adminheader{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adminheaderoptions{
+    display: flex;
+    background-color: black;
+    width:100%;
+    padding:8px;
+    margin-bottom: 15px;
+}
+.adminheaderlist{
+    width:100%;
+    justify-content: center;
+
+}
+.outlet{
+    margin:15px;
+}
+.delbtn{
+    background-color: white;
+    width: max-content;
+    padding: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.delbtn:hover{
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
